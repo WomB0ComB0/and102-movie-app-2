@@ -54,3 +54,30 @@ class MoviesAdapter(
         }
     }
 }
+
+//import android.view.LayoutInflater
+//import android.view.ViewGroup
+//import androidx.recyclerview.widget.RecyclerView
+//import com.example.movie_app_2.databinding.ItemMovieBinding
+//
+//class MoviesAdapter(private val movies: List<TrendingMovie>) : RecyclerView.Adapter<MoviesAdapter.MoviesViewHolder>() {
+//
+//    inner class MoviesViewHolder(private val binding: ItemMovieBinding) : RecyclerView.ViewHolder(binding.root) {
+//        fun bind(movie: TrendingMovie) {
+//            binding.movieTitle.text = movie.title
+//            binding.movieDescription.text = movie.overview
+//            // Load image using Glide or Picasso here
+//        }
+//    }
+//
+//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesViewHolder {
+//        val binding = ItemMovieBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+//        return MoviesViewHolder(binding)
+//    }
+//
+//    override fun onBindViewHolder(holder: MoviesViewHolder, position: Int) {
+//        holder.bind(movies[position])
+//    }
+//
+//    override fun getItemCount() = movies.size
+//}
