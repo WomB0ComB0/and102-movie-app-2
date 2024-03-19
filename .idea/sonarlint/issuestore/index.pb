@@ -9,3 +9,13 @@ D
 app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
 @
 build.gradle.kts,d\b\dbcff70658daf80b53ce624f6adcaa529df5ed8d
+c
+3app/src/main/java/com/example/movie_app_2/Movies.kt,9\2\924392cac13d226b5926ee03d616055ee1f089a5
+j
+:app/src/main/java/com/example/movie_app_2/MoviesAdapter.kt,0\2\028ac6b6161f92c34a8b83a9cabf568c6354ba7b
+l
+<app/src/main/java/com/example/movie_app_2/DetailsActivity.kt,d\7\d7432aa23890dbe554b90a6836b44ae2f9d5a5b4
+r
+Bapp/src/main/java/com/example/movie_app_2/MoviesDetailsActivity.kt,a\3\a360d64dcc633d31026989876078d815997ca496
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4

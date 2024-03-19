@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">movie-app-2</string>
+    <string name="movie_cover_image" />
+    <string name="this_is_a_title" />
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_exercitationem_amet_ipsa_labore_veniam_aperiam_ipsam_et_aut_omnis_maxime_modi_voluptatibus_magnam_molestiae_sapiente_tempora_repellat_accusantium_necessitatibus_perspiciatis_alias" />
+    <string name="this_is_a_movie_backdrop" />
+    <string name="movies_rating">TextView</string>
+    <string name="release_date" />
+    <string name="movie_title" />
+    <string name="movie_poster" />
 </resources>
