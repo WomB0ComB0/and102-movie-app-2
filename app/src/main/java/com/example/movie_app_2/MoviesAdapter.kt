@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.example.movie_app_2.R
 import com.example.movie_app_2.TrendingMovie
 import com.example.movie_app_2.MoviesDetailsActivity
@@ -48,8 +49,10 @@ class MoviesAdapter(
         fun bind(movie: TrendingMovie) {
             title.text = movie.title
             overview.text = movie.overview
+            val radius = 30
             Glide.with(itemView.context)
                 .load(movie.mediaImageUrl)
+                .transform(RoundedCorners(radius))
                 .into(poster)
         }
     }
