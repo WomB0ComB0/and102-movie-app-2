@@ -39,6 +39,6 @@ data class TrendingMovie(
         get() = createImageUrl(backdropPath)
 
     private fun createImageUrl(path: String?): String {
-        return "https://image.tmdb.org/t/p/w500/$%7Bpath.orEmpty()%7D"
+        return "https://image.tmdb.org/t/p/w500/${path.orEmpty()}"
     }
 }

@@ -3,6 +3,7 @@ package com.example.movie_app_2
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 
@@ -25,19 +26,22 @@ class MoviesDetailsActivity: AppCompatActivity() {
         movieReleaseDateView = findViewById(R.id.movieReleaseDate)
         movieDescriptionView = findViewById(R.id.movieDescription)
 
-        val movie = intent.getSerializableExtra(MOVIE_EXTRA) as TrendingMovie
+        val movie = intent.getParcelableExtra<TrendingMovie>(MOVIE_EXTRA)
+        if (movie != null) {
+            movieTitleView.text = movie.title
+            movieReleaseDateView.text = movie.releaseDate
+            movieDescriptionView.text = movie.overview
 
-        movieTitleView.text = movie.title
-        movieReleaseDateView.text = movie.releaseDate
-        movieDescriptionView.text = movie.overview
-
-        Glide.with(this)
-            .load(movie.mediaBackdropUrl)
-            .into(movieBackdropView)
-
+            Glide.with(this)
+                .load(movie.mediaBackdropUrl)
+                .into(movieBackdropView)
+        } else {
+            Toast.makeText(this, "Movie details not available", Toast.LENGTH_SHORT).show()
+            finish()
+        }
     }
 
     companion object {
-        val MOVIE_EXTRA: String = "MOVIE_EXTRA"
+        const val MOVIE_EXTRA: String = "MOVIE_EXTRA"
     }
 }

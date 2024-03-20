@@ -24,7 +24,7 @@ private val time_window: TimeWindow = if ("week" === "week") TimeWindow.WEEK els
 class MainActivity : AppCompatActivity() {
     private val movies = mutableListOf<TrendingMovie>()
     private lateinit var binding: ActivityMainBinding
-    private val API_KEY: String = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
+    private val API_KEY: String = "cb557f358b0d337b6cc3d8b8602e5a70"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

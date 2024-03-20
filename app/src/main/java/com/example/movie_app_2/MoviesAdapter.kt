@@ -29,9 +29,9 @@ class MoviesAdapter(
     override fun getItemCount(): Int = movies.size
 
     inner class MoviesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
-        private val title: TextView = itemView.findViewById(R.id.movieTitle)
-        private val overview: TextView = itemView.findViewById(R.id.movieDescription)
-        private val poster: ImageView = itemView.findViewById(R.id.movieBackdrop)
+        private val title: TextView = itemView.findViewById(R.id.movie_title)
+        private val overview: TextView = itemView.findViewById(R.id.movie_description)
+        private val poster: ImageView = itemView.findViewById(R.id.movie_poster)
 
         init {
             itemView.setOnClickListener(this)
@@ -54,30 +54,3 @@ class MoviesAdapter(
         }
     }
 }
-
-//import android.view.LayoutInflater
-//import android.view.ViewGroup
-//import androidx.recyclerview.widget.RecyclerView
-//import com.example.movie_app_2.databinding.ItemMovieBinding
-//
-//class MoviesAdapter(private val movies: List<TrendingMovie>) : RecyclerView.Adapter<MoviesAdapter.MoviesViewHolder>() {
-//
-//    inner class MoviesViewHolder(private val binding: ItemMovieBinding) : RecyclerView.ViewHolder(binding.root) {
-//        fun bind(movie: TrendingMovie) {
-//            binding.movieTitle.text = movie.title
-//            binding.movieDescription.text = movie.overview
-//            // Load image using Glide or Picasso here
-//        }
-//    }
-//
-//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesViewHolder {
-//        val binding = ItemMovieBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-//        return MoviesViewHolder(binding)
-//    }
-//
-//    override fun onBindViewHolder(holder: MoviesViewHolder, position: Int) {
-//        holder.bind(movies[position])
-//    }
-//
-//    override fun getItemCount() = movies.size
-//}
